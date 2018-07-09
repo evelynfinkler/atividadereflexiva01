@@ -1,0 +1,17 @@
+{
+	"keywords" : [
+		"evelyn"
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Evelyn\\Evelyn\\" : "src"
+		}
+	},
+	"name" : "evelyn/evelyn",
+	"type" : "evelyn",
+	"description" : "evelyn",
+	"license" : "evelyn",
+	"require" : {
+		"php" : ">=7.2"
+	}
+}

@@ -1,0 +1,88 @@
+<div align="left">
+    <form name="formulario" id="fcadastro" method="post">
+		<table cellspacing="1" cellpadding="1" border="0" >
+		<tr>
+			<td align="right" width="25%">&nbsp;</td>
+			<td align="left" width="75%">&nbsp;</td>
+		</tr>   
+       <div>
+		<tr>
+			<td align="right" width="25%" class="negrito">Nome:</td>
+			<td align="left" width="75%"><input type="text" id="fnome" value=" " size="40" maxlength="150" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Nascimento:</td>
+			<td align="left" width="75%"><input type="date" id="fnascimento" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Sexo:</td>
+			<td align="left" width="75%">			
+			    <select id="fsexo">
+				   <option value="F"><b>Feminino</b></option>
+				   <option value="M"><b>Masculino</b></option>
+			   </select>
+            </td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Endere&ccedil;o:</td>
+			<td align="left" width="75%"><input type="text" id="fendereco" value=" " size="40" maxlength="150" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">N&uacute;mero</td>
+			<td align="left" width="75%"><input type="text" id="fnumero" value=" " size="10" maxlength="5" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Bairro:</td>
+			<td align="left" width="75%"><input type="text" id="fbairro" value=" " size="40" maxlength="100" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Cidade:</td>
+			<td align="left" width="75%"><input type="text" id="fcidade" value=" " size="40" maxlength="150" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">UF:</td>
+			<td align="left" width="75%"><input type="text" id="fuf" value=" " size="40" maxlength="150" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">CPF:</td>
+			<td align="left" width="75%"><input type="number" id="fcpf" value=" " size="12" maxlength="12" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Telefone:</td>
+			<td align="left" width="75%"><input type="tel" id="ftelefone" size="20" maxlength="20" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">E-Mail:</td>
+			<td align="left" width="75%"><input type="email" id="femail" value=" " size="50" maxlength="150" /></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Escolaridade:</td>
+			<td align="left" width="75%">
+			<input type="button" value="+" onclick="escolaridadevisivel();" />
+			<div id="divescolaridade" class="invisivel">
+			    <textarea id="fescolaridade"></textarea></div>
+			</td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Refer&ecirc;ncias Pessoais:</td>
+            <td align="left" width="75%">
+			<input type="button" value="+" onclick="pessoalvisivel();" />
+			<div class="invisivel1">
+			   <textarea id="frefpessoal"></textarea>
+			</div></td>
+		</tr>   
+		<tr>
+			<td align="right" width="25%" class="negrito">Refer&ecirc;ncias Profissionais:</td>
+			<td align="left" width="75%">
+			<input type="button" value="+" onclick="profvisivel();" />
+			<div class="invisivel2">
+     			<textarea id="frefprofissional"></textarea>
+			</div></td>
+		</tr>   
+		<tr>
+			<td colspan="2" align="right" class="negrito"><input type="button" value="Gravar" onclick="gravarcurriculo();" /></td>
+		</tr>   
+            
+		</table>
+    </form>
+</div>
